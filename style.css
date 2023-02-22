@@ -1,0 +1,49 @@
+*{
+    font-family: Cambria;
+    text-align: center;
+}
+#baner, #stopka{
+    background: rgb(120, 0, 46);
+    color: white;
+    padding: 5px;
+    font-size: 150%;
+}
+#Menu{
+    background: rgb(173, 20, 87);
+    text-align: left;
+}
+#lewo{
+    background: snow;
+    color: olivedrab;
+    text-align: left;
+    float: left;
+    width: 60%;
+    height: 315px;
+    
+}
+#prawo{
+    background: rgb(173, 20, 87);
+    float: left;
+    width: 40%;
+    height: 310px;
+}
+#stopka{
+    clear: both;
+}
+#auto{
+    margin: 40px;
+    padding: 10px;
+}
+#auto:hover{
+    border: 1px dotted yellowgreen;
+}
+a{
+    color: yellowgreen;
+    padding: 0px 50px;
+}
+table, td{
+    border: 1px solid olivedrab;
+}
+table{
+    width: 100%;
+}

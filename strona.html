@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Stacja Paliw</title>  
+    </head>
+    <body>
+        <div id="baner">
+            <h1>Całodobowa stacja paliw</h1>
+        </div>
+        <div id="Menu">
+            <a href="godziny.html"><img src="dom.png" alt=""></a>
+            <a href="strona.html"><img src="dystrybutor.png" alt=""></a>
+        </div>
+        <div id="lewo">
+            <h2>Orientacyjny koszt paliwa</h2>
+            Rodzaj paliwa (1-benzyna, 2-olej napędowy) 
+            <br>
+            <input type="number" id="RodzajPaliwa"> 
+            <br>
+            Ile litrów? 
+            <br>
+            <input type="number" id="Ilosc"> 
+            <br>
+            <input type="button" value="Oblicz" onclick="oblicz()">
+            <p id="cena"></p>
+        </div>
+        <div id="prawo">
+            <img src="samochod.png" alt="samochód" id="auto">
+        </div>
+        <div id="stopka">
+            <p>Stronę opracował: Michał Kopacz</p>
+        </div>
+        <script>
+            function oblicz()
+            {
+                var rodzaj = document.getElementById("RodzajPaliwa").value;
+                var ilosc = document.getElementById("Ilosc").value;
+                if(rodzaj == 1)
+                {
+                    var cena = ilosc * 4 ;
+                }
+                if(rodzaj == 2)
+                {
+                    var cena = ilosc * 3.5;
+                }
+                if(rodzaj == 0 || rodzaj >2|| ilosc == 0 || ilosc < 0)
+                {
+                    var cena = 0
+                }
+                document.getElementById("cena").innerText = "Koszt paliwa wynosi " + cena + "zł";
+            }
+        </script>
+    </body>
+</html>
